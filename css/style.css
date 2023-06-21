@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+:root {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../Illustrations/Bathome1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #000;
+    color: white;
+    overflow-x: hidden;
+}
+/* Style de la section tete de page*/
+
+.section_de_tete>.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    border: 3px solid rgba(255, 255, 255, 0.096);
+    width: 90%;
+    height: 100px;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container>img {
+    width: 100%;
+}
+
+.icon_de_tete>h1 {
+    font: bold 30px/1.2 'Rajdhani', sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 0.6rem;
+}
+
+.icon_de_tete>img:hover,
+.logo_icon:hover {
+    filter: brightness(0) saturate(100%) invert(88%) sepia(93%) saturate(1187%) hue-rotate(357deg) brightness(104%) contrast(105%);
+}
+
+.icon, .home {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.rien_faire {
+    flex-grow: 4;
+}
+/* ...*/
+
+/*Style de section corp de page */
+
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+button {
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 2px;
+}
+
+.section_de_corp {
+    width: 100%;
+    text-align: center;
+}
+
+.section_de_corp>.section_1>.bouton {
+    display: inline-block;
+    vertical-align: baseline;
+    font: 400 20px/1.2 'Space Grotesk', sans-serif;
+    width: 200px;
+    height: auto;
+    margin: 12px;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    background: linear-gradient(-20deg, rgb(180, 28, 28), rgb(255, 240, 240) 130%);
+}
+
+.section_1>.section_p>p {
+    display: inline-block;
+    width: 57%;
+    margin: 0 auto;
+    padding: 70px 0 20px;
+    font: 24px/1.2 'Space Grotesk', sans-serif;
+}
+
+.section_1, .media, .video_style {
+    margin: 0 auto;
+    padding: 45px 0;
+    border: 3px solid rgba(255, 255, 255, 0.096);
+    width: 90%;
+}
+
+.section_H {
+    font: 2.5vw/1.2 'Space Grotesk', sans-serif;
+    padding-bottom: 14px;
+}
+
+.icon_fleche {
+    margin-top: 120px;
+}
+
+.batman_texte {
+    width: 80%;
+    text-align: left;
+    margin-left: 10vw;
+}
+
+.batman_texte>h1 {
+    font-weight: bold;
+    padding-bottom: 15px
+}
+
+.batman_texte>p {
+    font: 25px/1.2 'Space Grotesk', sans-serif;
+    text-align: justify;
+    padding-bottom: 25px;
+}
+
+.image_bat {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.image_bat>.image>.carte {
+    padding: 8px;
+    height: auto;
+    margin-bottom: 40px;
+    transition: transform 1s;
+}
+
+.image_bat>.image>.carte>img {
+    width: 100%;
+    height: auto;
+}
+
+.image_bat>.image>.carte>h3 {
+    font: 1.3vw/1.2 'Space Grotesk', sans-serif;
+    padding-top: 5px;
+}
+
+.image_bat>.image>.carte:hover {
+    transform: scale(1.1);
+}
+
+.logo_13 {
+    position: relative;
+    left: 14%;
+}
+
+.logo_13>img {
+    width: 24%;
+    height: auto;
+}
+
+.rien>img {
+    margin-left: 62vw;
+    margin-bottom: -55px;
+}
+
+/*...*/
+/* Style du container */
+
+
+.media {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img_fleche {
+    flex-grow: 1;
+}
+
+.media_slider {
+    display: inline-flex;
+    justify-content: center;
+    flex-grow: 4;
+    width: 55%;
+    height: auto;
+}
+
+.img_fleche_2 {
+    flex-grow: 1;
+}
+
+.slide {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    z-index: 1;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.slide-shown {
+    animation: fading 5s;
+    z-index: 4;
+}
+
+.slide1 {
+    background-image: linear-gradient(60deg, #c4c4c4, rgb(128, 128, 128));
+}
+
+.slide1>img {
+    width: 30%;
+    width: 30%;
+}
+
+.slide2 {
+    background-color: rgb(0, 156, 39);
+}
+
+.slide3 {
+    background-color: rgb(255, 0, 179);
+}
+
+.affichage {
+    margin: 10px;
+    width: 68;
+    text-align: left;
+}
+
+.affichage>h1 {
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.affichage>h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 450;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.affichage>h3>span {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    color: #FFFF00;
+}
+
+.affichage>h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+.affichage>p {
+    margin-top: 3px;
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Style lg_style */
+
+.video {
+    align-items: center;
+}
+
+.label-bd-annonce>.resposive-bd {
+    width: 80%;
+    height: 80%;
+}
+
+.label-bd-annonce {
+    position: relative;
+}
+
+.label-bd-annonce>.play_icon {
+    position: absolute;
+    top: 38%;
+    left: 44.8%;
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+}
+
+.resposive-bd:hover {
+    box-shadow: 0 0 25px #fff;
+    transition: 1s;
+}
+
+.bouton-play {
+    position: relative;
+    top: 370px;
+    z-index: 2;
+}
+
+.bd-annonce {
+    display: none;
+}
+
+/* ...*/
+
+/* Style section adress */
+
+.address {
+    background: linear-gradient(to top left, #0f2027, #203a43, #2c5364);
+}
+
+.contact {
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+form>label {
+    display: block;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 15px;
+}
+
+.label2 {
+    font-family: 'Space Grotesk', sans-serif;
+    width: 60%;
+    margin-top: 15px;
+}
+
+form>input {
+    display: block;
+    color: #fff;
+    font-family: 'Space Grotesk', sans-serif;
+    width: 99%;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    margin-top: 15px;
+}
+
+form>h1 {
+    font-weight: 800;
+    text-align: center;
+}
+
+form>h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 25px;
+}
+
+form>p {
+    margin-top: 20px;
+}
+
+textarea {
+    font-family: 'Space Grotesk', sans-serif;
+    padding-top: 6px;
+    width: 99%;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    outline: none;
+    color: #f1f1f1;
+}
+
+.newsletter:hover .newsletter_content {
+    display: block;
+    margin-top: 0px;
+    width: 59.5%;
+}
+
+.newsletter:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.newsletter {
+    margin-top: 30px;
+}
+
+.newsletter_in {
+    position: relative;
+    display: inline-block;
+    width: 99%;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+.newsletter_content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.newsletter_content {
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-groupe {
+    margin: 10px;
+    padding: 12px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn-groupe>button {
+    width: 150px;
+    height: 40px;
+    border-image: linear-gradient(160deg, hsl(0, 0%, 60%), hsl(198, 80%, 28%)) 1;
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+
+.bouton_confirmer {
+    margin-top: 14px;
+    text-align: center;
+}
+
+.confirmer {
+    background: linear-gradient(to right, hsl(40, 40%, 84%), hsl(356, 60%, 40%));
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+/* ...*/
+/* Style section footer */
+
+.citation {
+    width: 90%;
+    margin: 0 auto;
+    border-left: 3px solid rgba(255, 255, 255, 0.096);
+    border-right: 3px solid rgba(255, 255, 255, 0.096);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.citation_1 {
+    width: 50%
+}
+
+.cit_text {
+    max-width: 80%;
+    text-align: center;
+    display: block;
+}
+
+.sec_citacion {
+    display: flex;
+    padding: 30px;
+}
+
+.cit_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cit_text_1 {
+    margin: 12px;
+    font-size: 12px;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 5vw;
+}
+
+.cit_3 {
+    justify-content: flex-end;
+}
+
+.rd {
+    text-align: center;
+}
+
+.nav-footer {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 40px;
+}
+
+.Texte {
+    font-size: 1.2vw;
+    line-height: 20px;
+}
+
+.Texte>img {
+    width: 20px;
+}
+
+.icon_liste {
+    margin-top: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon_liste>div {
+    margin: 12px;
+}
+
+.icon_liste>div>img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-footer {
+    width: 90%;
+    margin: 0 auto;
+    border-left: 3px solid rgba(255, 255, 255, 0.096);
+    border-right: 3px solid rgba(255, 255, 255, 0.096);
+}
+
+.corp {
+    margin-left: -91000px;
+}
+
+.bgclick {
+    background-color: #49a2c9b2;
+    border: solid 1px #70aec9;
+}
+
+/* Style icon coté de page */
+
+.cote {
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    left: 50%;
+}
+
+.groupe_cote {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: content;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(50%, -50%);
+    right: 0;
+}
+
+@keyframes animeimage {
+    0% {
+        background-color: #49a2c9b2;
+        border: solid 1px #70aec9;
+    }
+}

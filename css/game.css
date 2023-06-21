@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: #000;
+    background-image: url("../Illustrations/game/Batgame_1.png");
+    background-repeat: no-repeat;
+    color: white;
+    background-size: contain;
+}
+
+.section_de_tete>.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.096);
+    border-right: 3px solid rgba(255, 255, 255, 0.096);
+    border-left: 3px solid rgba(255, 255, 255, 0.096);
+    width: 90%;
+    height: 100px;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container>img {
+    width: 100%;
+}
+
+.icon_de_tete>h1 {
+    font: bold 30px/1.2 'Rajdhani', sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 0.6rem;
+}
+
+.icon_de_tete>img:hover,
+.logo_icon:hover {
+    filter: brightness(0) saturate(100%) invert(88%) sepia(93%) saturate(1187%) hue-rotate(357deg) brightness(104%) contrast(105%);
+}
+
+ .home   {
+    text-align: center;
+    flex-grow: 1;
+}
+.icon {
+    text-align: center;
+    flex-grow: 1;
+    margin-top: 30px;
+}
+
+
+.game {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.rien_faire {
+    flex-grow: 4;
+}
+
+/*++++++++++++++++++++++++++++++++++*/
+
+.cote {
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    left: 50%;
+}
+
+.groupe_cote {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: content;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(50%, -50%);
+    right: 0;
+}
+
+/*Design corp */
+.class-main {
+    margin: 0 auto;
+    padding: 45px 0;
+    width: 90%;
+    border-right: 3px solid rgba(255, 255, 255, 0.096);
+    border-left: 3px solid rgba(255, 255, 255, 0.096);
+}
+
+.icon_fleche {
+    margin-top: 630px;
+    margin-left: 420px;
+    padding-bottom: 80px;
+
+}
+
+.corp-de-page {
+    flex-direction: column;
+    margin-left: 120px;
+    height: auto;
+    width: 80%;
+
+}
+
+.text-corp>h1 {
+    font-family: 'Rajdhani', sans-serif;
+    text-align: left;
+    margin-left: 100px;
+    font-weight: 400;
+    font-size: 32px;
+    font: bold;
+}
+
+button {
+     width: 200px;
+     height: 50px;
+     border-image: linear-gradient(60deg, #92a428, rgb(174, 145, 25));
+    
+     color: rgb(154, 121, 73);
+     margin-left: 350px;
+}
+
+.text-corp>button {
+    margin-top: 60px;
+}
+.titre {
+    width: 25%;
+    margin-left: 150px;
+    position: absolute;
+    top: 40%;
+}
+/* Disign footer */
+
+
+.nav-footer {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 40px;
+}
+
+.Texte {
+    font-size: 1.2vw;
+    line-height: 20px;
+}
+
+.Texte>img {
+    width: 20px;
+}
+
+.icon_liste {
+    margin-top: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon_liste>div {
+    margin: 12px;
+}
+
+.icon_liste>div>img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-footer {
+    width: 90%;
+    margin: 0 auto;
+    border-left: 3px solid rgba(255, 255, 255, 0.096);
+    border-right: 3px solid rgba(255, 255, 255, 0.096);
+}
+/*++++++++++++++++++++++++++++++++++++++++*/
+
+.quizz {
+    display: flex;
+    text-align: left;
+    margin-left: 250px;
+}
+label {
+border: 3px solid rgb(63, 61, 61);
+}
+
+.div-quizz>h1 {
+    text-align: center;
+}
