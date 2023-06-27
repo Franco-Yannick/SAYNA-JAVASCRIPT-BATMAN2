@@ -33,6 +33,7 @@ body {
     font: bold 30px/1.2 'Rajdhani', sans-serif;
     text-decoration: underline;
     text-underline-offset: 0.6rem;
+    color: white;
 }
 
 .icon_de_tete>img:hover,
@@ -117,9 +118,7 @@ body {
 button {
      width: 200px;
      height: 50px;
-     border-image: linear-gradient(60deg, #92a428, rgb(174, 145, 25));
-    
-     color: rgb(154, 121, 73);
+     background: linear-gradient(to right, #707070, rgba(209, 125, 14, 0.7529411765));
      margin-left: 350px;
 }
 
@@ -176,13 +175,115 @@ button {
 
 .quizz {
     display: flex;
-    text-align: left;
-    margin-left: 250px;
+    margin-left: 200px;
 }
 label {
-border: 3px solid rgb(63, 61, 61);
+    display: inline-block;
+    vertical-align:baseline;
+    font: 300 20px/1.2 'Space Grotesk', sans-serif;
+    width: 450px;
+    height: auto;
+    margin: 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    background: linear-gradient(-20deg, rgb(71, 59, 59), rgb(255, 240, 240) 130%);
+} 
+input [type="checkbox"] {
+    display: block;
+    width: 100px;
+}
+p{
+    font-family: 'Space Grotesk' , sans-serif;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .div-quizz>h1 {
     text-align: center;
+    padding-bottom: 90px;
+    margin-left: 400px;
+}
+
+.div-quizz {
+    position: absolute;
+    top: 140%;
+    display: none;
+}
+
+.quizz>img {
+    width: 20%;
+}
+/*++++++++++++++++++++++++++*/
+.img-quizz-2 {
+    width: 65%;
+    padding-right: 55px;
+    
+}
+
+.img-quizz-4 {
+    width: 80%;
+    margin-top: -55px;
+}
+
+.img-quizz-5 {
+    margin-top: 120px;
+    width: 70%;
+}
+
+.img-quizz-6 {
+    display: flex;
+    position: absolute;
+    width: 8%;
+    top: 120%;
+}
+
+
+.img-quizz-6>.img-quizz-annex {
+    padding-left: 530px;
+    width: 50%;
+}
+
+.img-quizz {
+    margin-top: 1150px;
+    width: 30%;
+}
+
+.img-quizz-batman {
+    display: flex;
+    width: 60%;
+    height: auto;
+}
+
+.batgam-img {
+    position: absolute;
+    margin: 50px;
+    margin-left: 750px;
+    width: 50%;
+}
+
+.batgam-img-1 {
+    position: absolute;
+    margin: 20px;
+    margin-left: 270px;
+}
+
+.part-quizz-img {
+    display:grid;
+    margin-left: 120px;
+    margin-top: 40px;
+}
+
+.img-quizz-10 {
+    position:  absolute;
+    top: 6.4%;
+    margin-left: 700px;
+    height: auto;
+    width: 50%;
+}
+
+.img-quizz-10-1 {
+    margin-left: 700px;
+    margin-top: 59px;
 }
